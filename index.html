@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>任哲恺 | Frontend Portfolio</title>
+    <meta
+      name="description"
+      content="任哲恺的前端作品简历页，展示项目经历、实习经历、技能与个人优势。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="grid-mask"></div>
+
+    <header class="hero container reveal">
+      <nav class="top-nav">
+        <div class="brand">Ren Zhekai</div>
+        <a class="pill" href="mailto:zhekairich@outlook.com">Contact</a>
+      </nav>
+
+      <div class="hero-main">
+        <p class="kicker">Frontend Engineer · Product-minded PM</p>
+        <h1>
+          任哲恺
+          <span>把复杂系统做成用户愿意长期使用的产品。</span>
+        </h1>
+        <p class="summary">
+          澳门科技大学软件工程在读（2022-至今），连续主导并交付 AI / 区块链 / Web 应用项目，具备从产品定义到前后端落地的全链路能力。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">查看项目</a>
+          <a class="btn btn-ghost" href="#experience">实习经历</a>
+        </div>
+      </div>
+
+      <div class="hero-cards">
+        <article class="metric-card">
+          <h3>3+</h3>
+          <p>完整项目交付</p>
+        </article>
+        <article class="metric-card">
+          <h3>200+</h3>
+          <p>复杂表字段治理</p>
+        </article>
+        <article class="metric-card">
+          <h3>GPA 3.21</h3>
+          <p>澳门科技大学 · 软件工程</p>
+        </article>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <h2>项目经历</h2>
+          <p>从 0 到 1 负责产品定义、架构设计和工程实现。</p>
+        </div>
+        <div class="card-grid">
+          <article class="project-card">
+            <p class="tag">AI / Time Series</p>
+            <h3>LSTM 预测模型搭建</h3>
+            <p>
+              作为 PM 与主要开发者，构建基于 RNN-LSTM 的港币走势预测系统，支持按命令抓取数据，使用
+              Dropout 与 Adam 优化训练稳定性与泛化能力。
+            </p>
+            <p class="role">贡献：算法设计、代码开发、测试验证</p>
+            <a href="https://github.com/Horse-Plus7/hkdLSTM.git" target="_blank" rel="noreferrer"
+              >GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <p class="tag">Web3 / Full Stack</p>
+            <h3>Solana 校园交易平台</h3>
+            <p>
+              负责产品规划与全栈落地，完成代币铸造、交易合约、钱包绑定与交易链路；前后端采用 React + Node.js，后端接入
+              MongoDB，并通过 Anchor 部署 Solana 合约。
+            </p>
+            <p class="role">贡献：功能设计、合约部署、身份交易绑定机制</p>
+            <a href="https://github.com/Horse-Plus7/MUSTcoinProgram" target="_blank" rel="noreferrer"
+              >GitHub</a
+            >
+          </article>
+
+          <article class="project-card">
+            <p class="tag">LLM / UX</p>
+            <h3>TRPG 对话机器人</h3>
+            <p>
+              基于 OpenAI API 实现多轮对话、记忆存储、文件分析与数据库管理，提升传统 TRPG 的沉浸体验；同时参与
+              UI 与交互设计。
+            </p>
+            <p class="role">贡献：API 集成、前端开发、数据层搭建</p>
+            <a href="https://github.com/namelacked/TRPGPT.git" target="_blank" rel="noreferrer"
+              >GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="section-head">
+          <h2>实习经历</h2>
+          <p>在真实业务环境里解决系统性能、维护性与协同效率问题。</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>友邦人寿保险有限公司 · 应用研发实习生</h3>
+            <p class="time">2025.06 - 2025.09</p>
+            <p>
+              参与租赁管理系统重构，使用 React 重写 UI 与业务流程，提升系统性能与可维护性。优化 200+ 字段复杂数据表，完成字段拆分、批量重命名和命名规范脚本化，增强查询效率和稳定性，并在 API
+              集成阶段开发数据适配器中间件保证跨模块一致性。
+            </p>
+          </article>
+          <article class="timeline-item">
+            <h3>宁波薪远电子科技有限公司 · 开发测试助理</h3>
+            <p class="time">2024.06 - 2024.09</p>
+            <p>
+              围绕芯片 API 学习并实践 RTOS 线程调度、信号量、互斥量、消息队列与定时器机制；掌握开发板 AT 命令测试流程，支持移动调制解调器请求服务验证。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split reveal">
+        <article class="panel">
+          <h2>技能矩阵</h2>
+          <ul>
+            <li>语言：Python / C++ / Java / Rust / R</li>
+            <li>前端：React / Vue / UI 交互设计</li>
+            <li>后端与部署：Node.js / MongoDB / Docker / Linux / Git</li>
+            <li>AI 工程：RAG 检索增强、Prompt Engineering、Agent 工作流设计与部署</li>
+            <li>AI 基础：NumPy / Pandas / Scikit-learn / TensorFlow / CUDA</li>
+            <li>产品：长期担任 PM，具备需求洞察与方案落地能力</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h2>个人亮点</h2>
+          <ul>
+            <li>澳门科技大学辩论队队长，团队全球排名第六</li>
+            <li>参与国际赛事并多次取得优异成绩</li>
+            <li>连续两年获年度卓越管理奖与文化学术杰出奖</li>
+            <li>已完成腾讯 AI 产品经理训练营，系统掌握 AI 产品方法论并获得结业证书</li>
+            <li>具备从 Prompt 设计到 RAG 与 Agent 落地的端到端 AI 应用构建能力</li>
+            <li>善用 Cursor / Claude 等 AI 工具提升研发效率</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container footer reveal">
+      <h2>Let’s build something excellent.</h2>
+      <p>电话/微信：13884489308 · 邮箱：zhekairich@outlook.com</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
